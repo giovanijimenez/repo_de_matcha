@@ -1,83 +1,53 @@
-body{
-text-align: center;
-background-color: rgb(235, 235, 235);
-margin: 0;
+body {
+  text-align: center;
+  margin: 0;
 }
-
-h1{
-   Color: #024157;
- }
-
-p{
-color: #46484c;
- }
-
- button{
-   color: #fff;
-   background-color: #025157;
- }
-
- li {
+h1 {
+  color: #8b8b8bcc
+}
+li {
   display: inline;
- }
-  
-.header{
-  margin: 40px 20px 0px 20px;
-  font-size: 0px;
+}
+.header {
+  margin: 40px 20px 0;
+  font-size: 0;
   height: 45px;
- }
-
-
- .header > * {
-   display: inline-block;
-   font-size: 16px;
-   vertical-align: middle;
-   height: 100%;
-   line-height: 45px;
- }
-
- .section{
-   margin-top: 20px;
-   padding-top: 20px;
- }
-
-
-
- .logo{
-   width: 15%;
- }
- .navbar{
-   width: 70%;
-   color: #025157;
-   font-size: 14px;
-   text-align: center;
-   margin: 0px 5px 0px 5px;
- }
- .actions{
-   width: 15%;
-   text-align: left;
-   font-size: 0;
- }
-
- .actions > *{
-   margin-right: 10px;
-   margin-left: 10px;
-   font-size: 16px;
-   display: inline-block;
- }
-
- .menu-item{
-   display: inline;
-   font-size: 16px;
-   margin: 0 10px;
-
- }
-
- .sing{
+  font-family: sans-serif;
+}
+.header > * {
+  display: inline-block;
+}
+.navbar {
+  width: 60%;
+  text-align: center;
+  color: #025157;
+}
+.menu-item {
+  display: inline;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.actions {
+  width: 25%;
+  text-align: left;
+  font-size: 0;
+}
+.actions > * {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  display: inline-block;
+}
+.actions a {
   color: #67b54b;
- }
-
- .boton{
-   background-color: #67b54b;
-   color: white;
- }
+}
+.actions button {
+  color: white;
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 5px;
+}
