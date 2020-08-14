@@ -1,83 +1,193 @@
-body{
-text-align: center;
-background-color: rgb(235, 235, 235);
-margin: 0;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #fffbf7;
+}
+.header {
+  margin: 40px 0;
+  font-size: 0;
+  height: 45px;
+  font-family: sans-serif;
+}
+.logo {
+  width: 20%;
+}
+.logo img {
+  vertical-align: middle;
+  width: 140px;
+}
+.header > * {
+  display: inline-block;
+  font-size: 16px;
+  height: 100%;
+}
+.navbar {
+  width: 60%;
+  text-align: center;
+  color: #025157;
+  height: 45px;
+}
+.menu-item {
+  display: inline;
+  font-size: 16px;
+  margin: 0 10px;
+}
+.actions {
+  width: 20%;
+  text-align: left;
+  font-size: 0;
+}
+.actions > * {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 16px;
+  display: inline-block;
+}
+.actions a {
+  color: #67b54b;
+  font-weight: bold;
+  text-decoration: none;
+}
+.actions a:hover {
+  cursor: pointer;
+}
+.actions button {
+  color: white;
+  background-color: #67b54b;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 0;
+  border-radius: 5px;
+}
+.intro {
+  width: 80%;
+  margin: 30px auto;
+}
+.intro img {
+  width: 80%;
+}
+main {
+  margin-top: 200px;
+  text-align: center;
+}
+.section {
+  margin: 30px auto;
+}
+.section h1 {
+  color: #025157;
+  font-family: 'Alegreya', serif;
+  font-size: 60px;
+  margin: 60px auto;
+  font-weight: 800;
 }
 
-h1{
-   Color: #024157;
- }
+.section p {
+  color: #46484c;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-family: 'Slabo 27px', serif;
+}
+.section form {
+  height: 55px;
+  margin-bottom: 30px;
+}
+.section input {
+  border: 1px solid #b6b6b6;
+  padding: 6px 20px;
+  border-radius: 8px;
+  height: 100%;
+}
+.section button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 100%;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
 
-p{
-color: #46484c;
- }
+.publish {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  flex: 1;
+  padding: 0 25px;
+}
 
- button{
-   color: #fff;
-   background-color: #025157;
- }
+.publish h3 {
+  font-family: 'Alegreya', serif;
+  font-size: 40px;
+  line-height: 48px;
+  color: #025157;
+}
+.publish > p {
+  font-size: 16px;
+  color: #343434;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.publish > form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: start;
+}
+.publish > form p {
+  color: #025157;
+  margin-right: 18px;
+}
 
- li {
-  display: inline;
- }
-  
-.header{
-  margin: 40px 20px 0px 20px;
-  font-size: 0px;
-  height: 45px;
- }
+.publish button {
+  background-color: #025157;
+  color: #fff;
+  border: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 100%;
+  padding: 6px 20px;
+  margin-left: -10px;
+}
 
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
 
- .header > * {
-   display: inline-block;
-   font-size: 16px;
-   vertical-align: middle;
-   height: 100%;
-   line-height: 45px;
- }
+.promo img {
+  width: 120px;
+  margin-top: 10px;
+}
 
- .section{
-   margin-top: 20px;
-   padding-top: 20px;
- }
+.go-to-action {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0 100px;
+}
 
-
-
- .logo{
-   width: 15%;
- }
- .navbar{
-   width: 70%;
-   color: #025157;
-   font-size: 14px;
-   text-align: center;
-   margin: 0px 5px 0px 5px;
- }
- .actions{
-   width: 15%;
-   text-align: left;
-   font-size: 0;
- }
-
- .actions > *{
-   margin-right: 10px;
-   margin-left: 10px;
-   font-size: 16px;
-   display: inline-block;
- }
-
- .menu-item{
-   display: inline;
-   font-size: 16px;
-   margin: 0 10px;
-
- }
-
- .sing{
-  color: #67b54b;
- }
-
- .boton{
-   background-color: #67b54b;
-   color: white;
- }
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
+}
